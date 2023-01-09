@@ -15,6 +15,7 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
+                            // HEADER
 .container{
     max-width:1140px;
     margin: 0 auto;
@@ -67,9 +68,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         color: brown;
         font-family: 'Roboto', sans-serif;
     }
-
 }
-
+                    // ABOUT
 .section{
     margin-top: 150px;
     display: flex;
@@ -100,6 +100,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         
     }
 }
+                    // SKILLS
 .section_second{
     display: flex;
     flex-direction: column;
@@ -111,7 +112,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     background-repeat: no-repeat;
     height: 100vh;
     background-attachment: fixed;
-    padding-top: 50px;
+    padding: 20px 0;
     .main_pre-title{
         text-align: center;
         margin-top: 20px;
@@ -148,5 +149,32 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     .img-skills{
         width: 120px;
         height: 120px;
+    }
+    .skills-text{
+        font-size: 30px;
+        color: white;
+    }
+}
+            // PORTFOLIO
+.section_third{
+    background-color: rgb(255, 247, 236);
+    .section_pre-title{
+        text-align: center;
+        margin-bottom: 50px;
+        padding: 100px 0;
+        font-size: 50px;
+        color: brown;
+        font-family: 'Lato', sans-serif;
+        position: relative;
+            &:after{
+            content: " ";
+            position: absolute;
+            top:200px;
+            left: 430px;
+            width: 250px;
+            height: 3px;
+            background-color: brown;
+            display: inline-block;            
+        }
     }
 }
