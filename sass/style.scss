@@ -17,6 +17,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
 .container{
     max-width:1140px;
+    margin: 0px 100px;
 }
 .header{
     background: url(/images/header.jpg);
@@ -24,5 +25,43 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    position: fixed;
+    // position: fixed;
+ 
+    padding-top: 50px;
+
+    .header_navigation{
+        display: flex;
+        justify-content:space-between;
+   
+    }
+    .header_logo-name{
+        font-size: 24px;
+        color: white;
+        text-decoration: none;
+    }
+    .header_list{
+        display: flex;
+        justify-content: space-between;
+        gap: 25px;
+    }
+    a{  
+        font-size: 18px;
+        color: white; 
+    }
+    .header_list_items:hover{
+        text-decoration: underline;
+        color: white;
+    }
+    .header_text{
+        font-size: 60px;
+        color: white;
+        text-align: center;
+        margin-top: 200px;
+        background-color: rgba(36, 25, 12, 0.571); 
+        padding: 30px;
+    }
+    span{
+        color: brown;
+    }
+
 }
