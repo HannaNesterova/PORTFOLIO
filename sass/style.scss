@@ -18,3 +18,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 .container{
     max-width:1140px;
 }
+.header{
+    background: url(/images/header.jpg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: fixed;
+}
