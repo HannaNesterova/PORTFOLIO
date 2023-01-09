@@ -130,4 +130,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
             display: inline-block;            
         }
     }
+    .my_skills{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .img-skills{
+        width: 70px;
+        height: 70px;
+    }
 }
