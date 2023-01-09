@@ -113,7 +113,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     background-attachment: fixed;
     padding-top: 50px;
     .main_pre-title{
-        margin-top: 70px;
+        text-align: center;
+        margin-top: 20px;
         margin-bottom: 50px;
         font-size: 50px;
         color: brown;
@@ -122,8 +123,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
             &:after{
             content: " ";
             position: absolute;
-            bottom: -60px;
-            left: -20px;
+            bottom: -16px;
+            left: 413px;
             width: 250px;
             height: 3px;
             background-color: brown;
@@ -133,9 +134,19 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     .my_skills{
         display: flex;
         flex-wrap: wrap;
+        gap:100px;
+        justify-content: center;
+    }
+    .skills-img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        background-color: rgba(240, 248, 255, 0.334);
+        border-radius: 50%;
     }
     .img-skills{
-        width: 70px;
-        height: 70px;
+        width: 120px;
+        height: 120px;
     }
 }
