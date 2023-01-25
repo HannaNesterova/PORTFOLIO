@@ -183,6 +183,19 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     }
     .sidebar {
         flex: 1 0 0;
+        font-size: 16px;
+      }
+      .section-title{
+        font-size: 25px;
+        margin-bottom: 20px;
+      }
+      li{
+        margin-bottom: 10px;
+      }
+      a:hover{ 
+            color: rgb(125, 151, 53);
+        }
+
       }
       
       .portfolio-second-column {
@@ -228,4 +241,3 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         margin-bottom: 5px;
       }
       
-}
