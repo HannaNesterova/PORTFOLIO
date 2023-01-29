@@ -77,6 +77,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     display: flex;
     flex-direction: column;
     align-items: center;
+    h6{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+    }
     .main_pre-title{
         margin-bottom: 50px;
         font-size: 50px;
@@ -87,8 +91,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
             content: " ";
             position: absolute;
             bottom: -30px;
-            left: -45px;
-            width: 250px;
+            left: 24px;
+            width: 150px;
             height: 3px;
             background-color:#682e32 ;
             display: inline-block;            
@@ -108,7 +112,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url(/images/back5.jpeg);
+    background: url(/images/back9.jpeg);
     position: relative;
     background-position: center;
     width: 100%;
@@ -129,12 +133,17 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
             content: " ";
             position: absolute;
             bottom: -36px;
-            left: 423px;
-            width: 250px;
+            right: 470px;
+            width: 150px;
             height: 3px;
             background-color: #682e32 ;
             display: inline-block;            
         }
+    }
+    h6{
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
     }
     .my_skills{
         display: flex;
@@ -152,8 +161,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         text-shadow: 1px 1px grey;
     }
     .img-skills{
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
     }
     .skills-text{
         font-size: 30px;
@@ -175,12 +184,21 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
             content: " ";
             position: absolute;
             bottom: 35px;
-            left: 420px;
-            width: 250px;
+            left: 480px;
+            width: 150px;
             height: 3px;
             background-color: #682e32 ;
             display: inline-block;                 
         }
+    }
+    .post-title{
+        margin-bottom: 20px;
+    }
+    h6{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 25px;
+        margin-top: 30px;
     }
     .main_container-portfolio{
         display: flex;
@@ -188,12 +206,16 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     }
     .sidebar {
         flex: 1 0 0;
-        font-size: 16px;
+        font-size: 25px;
+        height: 700px;
+        line-height: 1.5;
       }
       .section-title{
-        font-size: 25px;
+        font-size: 35px;
         margin-bottom: 20px;
         color: #1f2a30;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
       }
       span{
         color:#682e32 ;
@@ -210,6 +232,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
           color: #cda5a1;
         }
       }
+      img{
+        border: 1px solid #46555d;
+        border-radius: 15px;
+      }
 
       }
       
@@ -220,7 +246,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
       .sidebar, .portfolio-second-column {
         margin-right: 10px;
         padding: 40px;
-        border: 1px solid black;
+        border: 1px solid rgb(23, 2, 2);
         border-radius: 5px;
         margin-bottom: 100px;
       }
@@ -261,5 +287,246 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
       }
       
       footer{
-        background-color:#161e21;
+        background-color:#161e21;        
+        h6{
+            color: aliceblue;
+            font-size: 25px;
+            padding-top: 20px;
+            position: relative;
+            &:after{
+                content: " ";
+                position: absolute;
+                bottom: -30px;
+                left: 4px;
+                width: 150px;
+                height: 3px;
+                background-color:#682e32 ;
+                display: inline-block;            
+            } 
+        }
+        ul{
+            display: flex;
+            justify-content: space-around;
+            margin-left: 40px;
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+        li{
+            margin-right: 30px;
+            text-align: center;
+        }   
+        i{
+         color:rgb(255, 255, 255);
+         width: 70px;
+         height: 70px;
+        }
       }
+
+      @media all and (max-width: 1024px){
+        .section .main_text{
+            margin: 70px 50px;
+        }
+        .section_second{
+            .main_pre-title:after{
+                right: 316px;
+                width: 90px;
+            }
+            .skills-img{
+                padding: 20px;
+            }
+        }
+        .section_third{
+            .section_pre-title:after{
+                left:420px;
+            }
+        }
+    }
+    @media all and (max-width: 950px){
+        .header{
+             a{
+                font-size: 24px;
+            }
+            a:hover{
+                color: #161e21;
+            }
+            .header_text{
+                font-size: 60px;
+                line-height: 1.5;
+            }
+            span{
+                font-size: 70px;
+            }
+        }
+        .section .main_text{
+            font-size: 28px;
+        }
+        .section_second{
+            .main_pre-title:after{
+                right: 307px;
+                width: 150px;
+            }
+        }
+        .section_third{
+            .section_pre-title::after{
+                left: 440px;
+            }
+         }
+    }
+
+    @media all and (max-width: 820px){
+        .header .header_text{
+            text-align: left;
+            margin-top: 270px;
+            span{
+                text-shadow: 2px 2px white;
+            }
+        }
+        .section_second{
+            h6{
+                margin-top: 100px;
+            }
+            .section_second{
+                .main_pre-title:after{
+                    right: 250px;
+                }
+            }
+            .my_skills{
+                margin-top: 157px;
+            }
+        }
+        .section_third{
+            .section_pre-title::after{
+                left: 292px;
+            }
+            .section-title{
+                font-size: 28px;
+            }
+            li{
+                font-size: 24px;
+            }
+        }
+    }
+
+    @media all and (max-width: 420px){
+        .header{
+        .header_navigation{
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .header_text{
+            font-size: 35px;
+            margin-top: 80px;
+            line-height: 1.5;
+        }
+        span{
+            font-size: 40px;
+        }
+    }
+        .section{
+            .main_pre-title{
+                h6{
+                    font-size: 24px;
+                }
+            }
+            .main_pre-title::after{
+                top: 59px;
+                left: -10px;
+            }
+            .main_text{
+                margin: 0;
+                padding: 4px;
+            }
+        }
+        .section_second{
+            .my_skills{
+                gap: 80px;
+            }
+            h6{
+                margin-top: 20px;
+                font-size: 25px;
+            }
+            .main_pre-title::after{
+                right: 109px;
+            }
+            .my_skills{
+                margin-top: 90px;
+            }
+            .img-skills{
+                width: 76px;
+                height: 76px;
+            }
+            .skills-text{
+                font-size: 16px;
+                margin-top: 4px;
+            }
+        }
+        .section_third{
+            .main_container-portfolio{
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            .section_pre-title:after{
+                left: 246px;
+            }
+            li span{
+                font-size: 25px;
+            }
+        }
+        .section_third{
+            img{
+                width: 300px;
+            }
+            .portfolio-second-column {
+                padding: 24px;
+            }
+            .list{
+                display: flex;
+                flex-wrap: wrap;
+                gap:19px;
+                justify-content: center;
+                align-items: center;
+            }
+            .sidebar{
+                height: 350px;
+                line-height: 1;
+                .section-title{
+                    text-align: center;
+                }
+            }
+          
+        }
+    }
+
+    @media all and (max-width: 404px){
+        .header .header_text{
+            font-size: 25px;
+            text-shadow: 1px 1px rgb(65, 65, 65);
+        }
+        .header span{
+            font-size: 35px;
+            text-shadow: 1px 1px rgb(65, 65, 65);
+        }
+        .section_third{
+        .portfolio-second-column {
+            padding: 16px;
+        }
+      
+    }
+    .section_third{
+        .post-title{
+            font-size: 20px;
+        }
+        img{
+            width: 226px;
+            height: 170px;
+        }
+        h6{
+            font-size: 20px;
+        }
+        .tools{
+            font-size: 16px;
+        }
+    }
+    }
