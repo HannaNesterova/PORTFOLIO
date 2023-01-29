@@ -101,7 +101,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     .main_text{
         margin: 100px 0;
         text-align: center;
-        font-size: 18px;
+        font-size: 24px;
         line-height: 2;
         color: #1f2a30;
         
@@ -150,6 +150,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         flex-wrap: wrap;
         gap:100px;
         justify-content: center;
+        margin-top: 100px;
     }
     .skills-img{
         display: flex;
@@ -321,6 +322,19 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
          height: 70px;
         }
       }
+      @media all and (max-width: 1100px){
+        .section_second {
+            .main_pre-title:after {
+                left: 447px;
+            }
+            .img-skills{
+                gap: 27px;
+            }
+            .my_skills{
+                margin-top: 30px;
+            }
+        }
+      }
 
       @media all and (max-width: 1024px){
         .section .main_text{
@@ -362,13 +376,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         }
         .section_second{
             .main_pre-title:after{
-                right: 307px;
+                left: 313px;
                 width: 150px;
             }
         }
         .section_third{
             .section_pre-title::after{
-                left: 440px;
+                left: 321px;
             }
          }
     }
@@ -410,7 +424,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     @media all and (max-width: 420px){
         .header{
         .header_navigation{
-            margin-top: 40px;
+            margin-top: 10px;
             display: flex;
             flex-direction: column;
             gap: 30px;
@@ -435,20 +449,21 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
                 left: -10px;
             }
             .main_text{
+                font-size: 20px;
                 margin: 0;
-                padding: 4px;
+                padding: 10px 5px;
             }
         }
         .section_second{
             .my_skills{
-                gap: 80px;
+                gap: 49px;
             }
             h6{
                 margin-top: 20px;
                 font-size: 25px;
             }
             .main_pre-title::after{
-                right: 109px;
+                left: 119px;
             }
             .my_skills{
                 margin-top: 90px;
@@ -468,7 +483,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
                 flex-direction: column-reverse;
             }
             .section_pre-title:after{
-                left: 246px;
+                left: 116px;
             }
             li span{
                 font-size: 25px;
