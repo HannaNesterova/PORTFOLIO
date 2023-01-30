@@ -22,7 +22,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     padding: 0 20px;
 }
 .header{
-    background: url(images/background.jpeg);
+    background: url(/images/background.jpeg);
     position: relative;
     width: 100%;
     background-size: cover;
@@ -112,7 +112,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url(images/back9.jpeg);
+    background: url(/images/back9.jpeg);
     position: relative;
     background-position: center;
     width: 100%;
@@ -420,6 +420,98 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
             }
         }
     }
+    @media all and (max-width: 545px){
+        .header{
+            .header_navigation{
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+            }
+            .header_text{
+                font-size: 35px;
+                margin-top: 80px;
+                line-height: 1.5;
+            }
+            span{
+                font-size: 40px;
+            }
+        }
+            .section{
+                .main_pre-title{
+                    h6{
+                        font-size: 24px;
+                    }
+                }
+                .main_pre-title::after{
+                    top: 59px;
+                    left: -10px;
+                }
+                .main_text{
+                    font-size: 20px;
+                    margin: 0;
+                    padding: 10px 5px;
+                }
+            }
+            .section_second{
+                .my_skills{
+                    gap: 49px;
+                }
+                h6{
+                    margin-top: 20px;
+                    font-size: 25px;
+                }
+                .main_pre-title::after{
+                    left: 119px;
+                }
+                .my_skills{
+                    margin-top: 90px;
+                }
+                .img-skills{
+                    width: 76px;
+                    height: 76px;
+                }
+                .skills-text{
+                    font-size: 16px;
+                    margin-top: 4px;
+                }
+            }
+            .section_third{
+                .main_container-portfolio{
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+                .section_pre-title:after{
+                    left: 116px;
+                }
+                li span{
+                    font-size: 25px;
+                }
+            }
+            .section_third{
+                img{
+                    width: 300px;
+                }
+                .portfolio-second-column {
+                    padding: 24px;
+                }
+                .list{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap:19px;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .sidebar{
+                    height: 350px;
+                    line-height: 1;
+                    .section-title{
+                        text-align: center;
+                    }
+                }
+              
+            }
+        }
 
     @media all and (max-width: 420px){
         .header{
