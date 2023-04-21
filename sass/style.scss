@@ -23,11 +23,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 }
 .header{
     background-image: url(../images/background.jpeg);
-    background-size: cover;
+    background-size: 100%;
     position: relative;
     height: 100vh;
     background-attachment: fixed;
-
+    width: 100%;
     padding-top: 50px;
 
     .header_navigation{
@@ -1124,7 +1124,14 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         }
       }
 
-      @media all and (max-width: 1024px){
+      @media all and (max-width: 1030px){
+        .header{
+            .header_text{
+                font-size: 90px;
+                text-align: left;
+                margin-top: 400px;
+            }
+        }
         .section .main_text{
             margin: 70px 50px;
         }
@@ -1177,6 +1184,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         .header .header_text{
             text-align: left;
             margin-top: 270px;
+            font-size: 55px;
             span{
                 text-shadow: 2px 2px white;
             }
@@ -1199,7 +1207,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     @media all and (max-width: 780px){
         .header{
             .header_text{
-                font-size: 35px;
+                font-size: 55px;
                 margin-top: 125px;
             }
         }
