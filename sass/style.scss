@@ -23,12 +23,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 }
 .header{
     background-image: url(../images/background.jpeg);
-    background-size: 100%;
+    background-size: 200%;
     position: relative;
-    height: 100vh;
+ 
     background-attachment: fixed;
     width: 100%;
     padding-top: 50px;
+    background-repeat: no-repeat;
 
     .header_navigation{
         display: flex;
@@ -101,6 +102,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-size: 100%;
     background-image: url(../images/back9.jpeg);
     position: relative;
     background-position: center;
@@ -1127,9 +1129,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
       @media all and (max-width: 1030px){
         .header{
             .header_text{
-                font-size: 90px;
+                font-size: 60px;
                 text-align: left;
-                margin-top: 400px;
+                margin-top: 140px;
             }
         }
         .section .main_text{
@@ -1310,8 +1312,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
             border-radius: 20px;
         }
         .header_text{
-            font-size: 35px;
-            margin-top: -12px;
+            font-size: 25px;
+            margin-top: -102px;
             line-height: 1.5;
         }
         span{
