@@ -1214,6 +1214,9 @@ body{
                 font-size: 55px;
                 margin-top: 125px;
             }
+            .header_list{
+                text-align: center;
+            }
         }
         .section_second {
             h6{
@@ -1250,17 +1253,25 @@ body{
     }
     @media all and (max-width: 620px){
         .header{
+            .header_navigation{
+                display: flex;
+                flex-direction: column-reverse;
+            }
             .header_text{
                 font-size: 35px;
                 margin-top: 10px;
+                text-align: end;
             }
             .header_list{
                 display: flex;
-                flex-direction: column;
-                align-items: end;
                 background-color: #46555d57;
                 padding: 15px;
                 border-radius: 15px;
+                text-align: center;
+            }
+            .header_logo-name{
+                text-align: end;
+                margin: 30px 20px;
             }
         }
         .section_second {
@@ -1307,15 +1318,15 @@ body{
         .header{
         .header_list{
             display: flex;
-            flex-direction: column;
-            align-items: end;
             background-color: #46555d57;
             padding: 15px;
-            border-radius: 20px;
+            border-radius: 10px;
+            font-size: 18px;
+            gap: 12px;
         }
         .header_text{
-            font-size: 25px;
-            margin-top: -102px;
+            font-size: 35px;
+            margin-top: 5px;
             line-height: 1.5;
         }
         span{
@@ -1396,8 +1407,11 @@ body{
 
     @media all and (max-width: 404px){
         .header .header_text{
-            font-size: 25px;
+            font-size: 35px;
             text-shadow: 1px 1px rgb(65, 65, 65);
+        }
+        .header a{
+            font-size: 16px;
         }
         .header span{
             font-size: 35px;
