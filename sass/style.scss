@@ -129,7 +129,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         flex-wrap: wrap;
         gap:100px;
         justify-content: center;
-        margin-top: 100px;
+        margin-top: 10px;
     }
     .skills-img{
         display: flex;
@@ -1168,7 +1168,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         }
         .section_second{
             .my_skills{
-                margin-top: 250px;
+                margin-top: 10px;
                 gap:130px;
             }
         }
@@ -1293,12 +1293,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
     @media all and (max-width: 455px){
         .header{
-        // .header_navigation{
-        //     margin-top: 10px;
-        //     display: flex;
-        //     flex-direction: column;
-        //     gap: 30px;
-        // }
         .header_list{
             display: flex;
             flex-direction: column;
@@ -1331,13 +1325,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         .section_second{
             .my_skills{
                 gap: 49px;
+                margin-top: 10px;
             }
             h6{
                 margin-top: 20px;
                 font-size: 25px;
-            }
-            .my_skills{
-                margin-top: 90px;
             }
             .img-skills{
                 width: 76px;
@@ -1357,7 +1349,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
                 font-size: 20px;
             }
             .post-content{
-                width: 300px;
+                width: 270px;
+                height: 250px;
+                margin-top: 10px;
             }
         }
         .section_third{
