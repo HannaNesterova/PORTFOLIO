@@ -1355,8 +1355,8 @@ body{
                 font-size: 25px;
             }
             .img-skills{
-                width: 76px;
-                height: 76px;
+                width: 53px;
+                height: 53px;
             }
             .skills-text{
                 font-size: 16px;
@@ -1387,9 +1387,10 @@ body{
             .list{
                 display: flex;
                 flex-wrap: wrap;
-                gap:19px;
+                gap:10px;
                 justify-content: center;
                 align-items: center;
+                text-decoration: underline;
             }
             .post{
                 margin-top: 50px;
