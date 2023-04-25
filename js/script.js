@@ -38,3 +38,27 @@ const links = document.querySelectorAll('.titles a');
 for(let link of links){
   link.addEventListener('click', titleClickHandler);
 }
+
+
+
+
+const burgerIcon = document.querySelector('.header__burger');
+const navigationMenu = document.querySelector('.header_list');
+const body = document.querySelector('body');
+
+burgerIcon.addEventListener('click', function(){
+  navigationMenu.classList.toggle('active');
+  burgerIcon.classList.toggle('active');
+  body.classList.toggle('lock');
+})
+
+const menuItems = document.querySelectorAll('.header_list_items');
+
+menuItems.forEach(item => {
+  item.addEventListener('click', () => {
+    navigationMenu.classList.remove('active');
+    burgerIcon.classList.remove('active');
+    document.body.classList.remove('lock');
+    // Add code to show the main page here
+  });
+});
