@@ -4,7 +4,7 @@
 :focus,:active{outline: none;}
 a:focus,a:active{outline: none;}
 nav,footer,header,aside{display: block;}
-html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+html,body{height:100%;width:105%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
 input,button,textarea{font-family:inherit;}
 input::-ms-clear{display: none;}
 button{cursor: pointer;}
@@ -1157,7 +1157,89 @@ body{
       }
 
       @media all and (max-width: 1030px){
+        //BAR
+        body.lock{
+          overflow: hidden;
+        }
+        .header__burger{
+          display: block;
+          position: relative;
+          width: 30px;
+          height: 20px;
+          top:23px;
+          cursor: pointer;
+        }
+        .header__burger::before,
+        .header__burger::after{
+          content: '';
+          background-color: #ffffff;
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          right: 20px;
+          z-index: 13;
+          transition: all 0.3s ease 0s;
+          cursor: pointer;
+        }
+        .header__burger span{
+          position: absolute;
+          background-color:#ffffff;
+          right: 20px;
+          width: 100%;
+          height: 2px;
+          top: 9px;
+          z-index: 5;
+          transition: all 0.3s ease 0s;
+          cursor: pointer;
+        }
+        .header__burger::before{
+          top: 0;
+        }
+        .header__burger::after{
+          bottom: 0;
+        }
+        .header .header_list{
+          position: fixed;
+          top: -100%;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #cda5a1;
+          padding: 100px 0px 0px 0px;
+          display: block;  
+          transition: all 0.3s ease 0s;  
+          overflow: auto;
+        }
+        .header .header_list.active{
+          top: 0;
+        }
+        .header .header_list a{
+          line-height: 2.5;
+          padding: 40px;
+          text-transform: uppercase;
+          font-size: 30px;
+          text-align: center;
+        }
+        .header__burger.active::before{
+          transform: rotate(45deg);
+          top: 9px;
+          cursor: pointer;
+        }
+        .header__burger.active::after{
+          transform: rotate(-45deg);
+          bottom: 9px;
+          cursor: pointer;
+        }
+        .header__burger.active span{
+          transform: scale(0);
+        }
+        .section_third .sidebar{
+          height: 600px;
+        }
+  
+        //
         .header{
+          height: 75vh;
             .header_text{
                 font-size: 80px;
                 text-align: right;
@@ -1168,6 +1250,7 @@ body{
             margin: 70px 50px;
         }
         .section_second{
+          height: 75vh;
             .main_pre-title:after{
                 right: 316px;
                 width: 90px;
@@ -1227,238 +1310,7 @@ body{
           height: 350px;
         }
     }
-    // @media all and (max-width: 780px){
-    // //     .header{
-    // //         .header_text{
-    // //             font-size: 55px;
-    // //             margin-top: 125px;
-    // //         }
-    // //         .header_list{
-    // //             text-align: center;
-    // //         }
-    // //     }
-    // //     .section_second {
-    // //         h6{
-    // //         margin-top: -10px;
-    // //     }
-    // //     .my_skills{
-    // //         gap:80px;
-    // //     }
-    // // }
-    // // .section_third{
-    // //     .portfolio-second-column{
-    // //         padding: 15px;
-    // //     }
-    // //     .sidebar{
-    // //         padding: 20px;
 
-    // //     }
-    // //     .section-title{
-    // //         font-size: 20px;
-    // //     }
-    // //     span{
-    // //         font-size: 20px;
-    // //     }
-    // //     a{
-    // //         font-size: 24px;
-    // //     }
-    // //     .post{
-    // //         margin-top: 100px;
-    // //     }
-    // //     .post-content{
-    // //         width: 430px;;
-    // //     }
-    // //     }
-    //  }
-    //  @media all and (max-width: 620px){
-    // //     .header{
-    // //         .header_navigation{
-    // //             display: flex;
-    // //             flex-direction: column-reverse;
-    // //         }
-    // //         .header_text{
-    // //             font-size: 35px;
-    // //             margin-top: 10px;
-    // //             text-align: end;
-    // //         }
-    // //         .header_list{
-    // //             display: flex;
-    // //             background-color: #46555d57;
-    // //             padding: 15px;
-    // //             border-radius: 15px;
-    // //             text-align: center;
-    // //         }
-    // //         .header_logo-name{
-    // //             text-align: end;
-    // //             margin: 30px 20px;
-    // //         }
-    // //     }
-    // //     .section_second {
-    // //         h6{
-    // //         margin-top: -10px;
-    // //     }
-    // //     .my_skills{
-    // //         gap:40px;
-    // //     }
-    // // }
-    // // .section_third{
-    // //     .main_container-portfolio{
-    // //         display: flex;
-    // //         flex-direction: column;
-    // //     }
-    // //     .portfolio-second-column{
-    // //         padding: 15px;
-    // //     }
-    // //     .sidebar{
-    // //         padding: 20px;
-    // //         height: 300px;
-    // //     }
-    // //     .list{
-    // //         display: flex;
-    // //         flex-wrap: wrap;
-    // //         gap: 21px;
-    // //     }
-    // //     .section-title{
-    // //         font-size: 25px;
-    // //     }
-    // //     span{
-    // //         font-size: 20px;
-    // //     }
-    // //     a{
-    // //         font-size: 24px;
-    // //     }
-    // //     .post{
-    // //         margin-top: 100px;
-    // //     }
-    // // }
-    //  }
-
-    //  @media all and (max-width: 455px){
-    // //     .header{
-    // //     .header_list{
-    // //         display: flex;
-    // //         flex-direction: column;
-    // //         background-color: #46555d91;
-    // //         padding: 15px;
-    // //         border-radius: 10px;
-    // //         font-size: 22px;
-
-    // //     }
-    // //     .header_text{
-    // //         font-size: 35px;
-    // //         margin-top: 5px;
-    // //         line-height: 1.2;
-    // //     }
-    // //     span{
-    // //         font-size: 40px;
-    // //     }
-    // // }
-    // //     .section{
-    // //         .main_pre-title{
-    // //             h6{
-    // //                 font-size: 24px;
-    // //             }
-    // //         }
-    // //         .main_text{
-    // //             font-size: 20px;
-    // //             margin: 0;
-    // //             padding: 10px 5px;
-    // //         }
-    // //     }
-    // //     .section_second{
-    // //         .my_skills{
-    // //             gap: 66px;
-    // //             margin-top: 10px;
-    // //         }
-    // //         h6{
-    // //             margin-top: 20px;
-    // //             font-size: 25px;
-    // //         }
-    // //         .img-skills{
-    // //             width: 53px;
-    // //             height: 53px;
-    // //         }
-    // //         .skills-text{
-    // //             font-size: 16px;
-    // //             margin-top: 4px;
-    // //         }
-    // //     }
-    // //     .section_third{
-    // //         .main_container-portfolio{
-    // //             display: flex;
-    // //             flex-direction: column-reverse;
-    // //         }
-    // //         li span{
-    // //             font-size: 20px;
-    // //         }
-    // //         .post-content{
-    // //             width: 270px;
-    // //             height: 250px;
-    // //             margin-top: 10px;
-    // //         }
-    // //     }
-    // //     .section_third{
-    // //         img{
-    // //             width: 300px;
-    // //         }
-    // //         .portfolio-second-column {
-    // //             padding: 24px;
-    // //         }
-    // //         .list{
-    // //             display: flex;
-    // //             flex-wrap: wrap;
-    // //             gap:15px;
-    // //             justify-content: center;
-    // //             align-items: center;
-    // //         }
-    // //         .post{
-    // //             margin-top: 50px;
-    // //         }
-    // //         .sidebar{
-    // //             height: 350px;
-    // //             line-height: 1;
-    // //             .section-title{
-    // //                 text-align: center;
-    // //             }
-    // //         }
-          
-    // //     }
-    //  }
-
-    //  @media all and (max-width: 404px){
-    // //     .header .header_text{
-    // //         font-size: 35px;
-    // //         text-shadow: 1px 1px rgb(65, 65, 65);
-    // //     }
-    // //     .header a{
-    // //         font-size: 16px;
-    // //     }
-    // //     .header span{
-    // //         font-size: 35px;
-    // //         text-shadow: 1px 1px rgb(65, 65, 65);
-    // //     }
-    // //     .section_third{
-    // //     .portfolio-second-column {
-    // //         padding: 16px;
-    // //     }
-      
-    // // }
-    // // .section_third{
-    // //     .post-title{
-    // //         font-size: 20px;
-    // //     }
-    // //     img{
-    // //         width: 226px;
-    // //         height: 170px;
-    // //     }
-    // //     h6{
-    // //         font-size: 20px;
-    // //     }
-    // //     .tools{
-    // //         font-size: 16px;
-    // //     }
-    // // }
-    //  }
 
     @media all and (max-width:780px){
       body.lock{
@@ -1520,7 +1372,7 @@ body{
         line-height: 2.5;
         padding: 40px;
         text-transform: uppercase;
-        font-size: 40px;
+        font-size: 30px;
         text-align: center;
       }
       .header__burger.active::before{
@@ -1542,12 +1394,8 @@ body{
 
     }
 
-    @media all and (max-width:440px){
+    @media all and (max-width:460px){
       .header{
-        .header .header_list a{
-          line-height: 1.5;
-          font-size: 30px;
-        }
        .header_text{
         font-size: 50px;
          margin-top: 100px;
@@ -1571,7 +1419,6 @@ body{
             height: 50px;
           }
           }
-  
              .section_third{
 
                  li span{
@@ -1584,38 +1431,9 @@ body{
                   width: 250px;
                   height: 300px;
                 }
+                .list{
+                  gap:20px;
+                }
             
               }
-        // //         .post-content{
-        // //             width: 270px;
-        // //             height: 250px;
-        // //             margin-top: 10px;
-        // //         }
-        // //     }
-        // //     .section_third{
-        // //         img{
-        // //             width: 300px;
-        // //         }
-        // //         .portfolio-second-column {
-        // //             padding: 24px;
-        // //         }
-        // //         .list{
-        // //             display: flex;
-        // //             flex-wrap: wrap;
-        // //             gap:15px;
-        // //             justify-content: center;
-        // //             align-items: center;
-        // //         }
-        // //         .post{
-        // //             margin-top: 50px;
-        // //         }
-        // //         .sidebar{
-        // //             height: 350px;
-        // //             line-height: 1;
-        // //             .section-title{
-        // //                 text-align: center;
-        // //             }
-        // //         }
-              
-        // //     }
     }
