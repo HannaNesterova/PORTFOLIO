@@ -17,6 +17,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
 body{
     background-color:#cbbab872;
+    font-family: 'Montserrat', sans-serif;
 }
                             // HEADER
 .container{
@@ -38,6 +39,8 @@ body{
     .header_navigation{
         display: flex;
         justify-content:space-between;
+        font-weight: 600;
+
    
     }
     .header_logo-name{
@@ -72,7 +75,7 @@ body{
         font-size: 45px;
         color: #682e32 ;
         font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
+        font-weight: 600;
     }
 }
                     // ABOUT
@@ -1198,7 +1201,7 @@ body{
                 margin-top: 100px;
             }
             .my_skills{
-                margin-top: 157px;
+                margin-top: 80px;
             }
             .section-title{
                 font-size: 28px;
@@ -1318,16 +1321,17 @@ body{
         .header{
         .header_list{
             display: flex;
-            background-color: #46555d57;
+            flex-direction: column;
+            background-color: #46555d91;
             padding: 15px;
             border-radius: 10px;
-            font-size: 18px;
-            gap: 12px;
+            font-size: 22px;
+
         }
         .header_text{
             font-size: 35px;
             margin-top: 5px;
-            line-height: 1.5;
+            line-height: 1.2;
         }
         span{
             font-size: 40px;
@@ -1347,7 +1351,7 @@ body{
         }
         .section_second{
             .my_skills{
-                gap: 49px;
+                gap: 66px;
                 margin-top: 10px;
             }
             h6{
@@ -1387,10 +1391,9 @@ body{
             .list{
                 display: flex;
                 flex-wrap: wrap;
-                gap:10px;
+                gap:15px;
                 justify-content: center;
                 align-items: center;
-                text-decoration: underline;
             }
             .post{
                 margin-top: 50px;
