@@ -4,7 +4,7 @@
 :focus,:active{outline: none;}
 a:focus,a:active{outline: none;}
 nav,footer,header,aside{display: block;}
-html,body{height:100%;width:105%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
 input,button,textarea{font-family:inherit;}
 input::-ms-clear{display: none;}
 button{cursor: pointer;}
@@ -1160,7 +1160,7 @@ body{
         //BAR
         body.lock{
           overflow: hidden;
-        }
+        }        
         .header__burger{
           display: block;
           position: relative;
@@ -1236,14 +1236,13 @@ body{
         .section_third .sidebar{
           height: 600px;
         }
-  
         //
         .header{
           height: 75vh;
             .header_text{
-                font-size: 80px;
+                font-size: 60px;
                 text-align: right;
-                margin-top: 380px;
+                margin-top: 150px;
             }
         }
         .section .main_text{
@@ -1259,8 +1258,8 @@ body{
                 padding: 40px;
             }
            .img-skills{
-              width: 150px;
-              height: 150px;
+              width: 80px;
+              height: 80px;
             }
         }
         .section_third{
@@ -1273,7 +1272,7 @@ body{
     @media all and (max-width: 820px){
         .header .header_text{
             text-align: right;
-            margin-top: 270px;
+            margin-top: 120px;
             font-size: 55px;
             span{
                 text-shadow: 2px 2px white;
@@ -1388,8 +1387,20 @@ body{
       .header__burger.active span{
         transform: scale(0);
       }
+      .section_second .my_skills{
+        margin-top: 0;
+        gap: 15px;
+      }
+      .list{
+        gap: 20px;
+      }
       .section_third .sidebar{
         height: 350px;
+      }
+      .portfolio-second-column .card1, .card2, .card3, .card4, .card5, .card6, 
+      .card7, .card8, .card9, .card10, .card11, .card12, .card13{
+        width: 420px;
+        height: 300px;
       }
 
     }
