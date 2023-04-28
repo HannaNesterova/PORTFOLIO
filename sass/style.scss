@@ -1240,9 +1240,9 @@ body{
         .header{
           height: 75vh;
             .header_text{
-                font-size: 60px;
+                font-size: 55px;
                 text-align: right;
-                margin-top: 150px;
+                margin-top: 100px;
             }
         }
         .section .main_text{
@@ -1272,8 +1272,8 @@ body{
     @media all and (max-width: 820px){
         .header .header_text{
             text-align: right;
-            margin-top: 120px;
-            font-size: 55px;
+            margin-top: 100px;
+            font-size: 50px;
             span{
                 text-shadow: 2px 2px white;
             }
@@ -1294,6 +1294,9 @@ body{
             .img-skills{
               width: 70px;
               height: 70px;
+          }
+          .skills-img{
+            padding: 35px;
           }
         }
         .section_third .main_container-portfolio{
